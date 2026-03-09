@@ -42,3 +42,10 @@
 ## 控制台
 
 似乎开启了模组，按下`~`（tab上方那个键）即可打开控制台。输入`help`即可查看命令。例如`card SURVIVOR`是把一张生存者加入手中。
+
+## DEBUG
+
+尖塔根目录有许多`launch_xxx.bat`，选择一个合适的，右键记事本编辑，在其中加一个`--log`，例如`@echo off
+"%~dp0SlayTheSpire2.exe" --log --rendering-driver opengl3 %*`。
+
+然后在根目录创建一个`steam_appid.txt`，里面写`2868840`，然后双击修改的bat文件运行即可以一个能输出log的命令行的方式打开游戏。
